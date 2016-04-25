@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start">
+<RelativeLayout
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffffff"
+    >
+    <!-- android:baselineAligned="false"基准线不对齐 默认对齐-->
+
+    <LinearLayout
+        android:id="@+id/main_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/whilte"
+        android:gravity="center_horizontal"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        >
+        <RelativeLayout
+            android:id="@+id/btn_container_homepage"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            >
+         <!--   <Button
+                android:id="@+id/btn_homepage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawableTop="@drawable/click_homepage"
+                android:onClick="onTabClicked"
+                android:paddingTop="7dip"
+                android:background="@drawable/bg_checkbox_menus"
+
+                android:textColor="@color/colorbutton"
+                android:drawablePadding="2dp"
+                android:textSize="12sp"
+                />-->
+            <Button
+                android:id="@+id/btn_homepage"
+                android:layout_width="32dp"
+                android:layout_height="30dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/click_homepage"
+                android:scaleType="matrix"
+                android:onClick="onTabClicked"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/btn_container_square"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            >
+      <!--      <Button
+                android:id="@+id/btn_square"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawableTop="@drawable/click_square"
+                android:text="活动"
+                android:onClick="onTabClicked"
+                android:paddingTop="7dip"
+                android:background="@drawable/bg_checkbox_menus"
+                android:scaleType="matrix"
+                android:textColor="@color/colorbutton"
+                android:drawablePadding="2dp"
+                android:textSize="12sp"
+                />-->
+            <Button
+                android:id="@+id/btn_square"
+                android:layout_width="32dp"
+                android:layout_height="30dp"
+                android:onClick="onTabClicked"
+                android:scaleType="matrix"
+                android:layout_centerInParent="true"
+                android:background="@drawable/click_square"
+                />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/btn_container_match"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            >
+
+
+
+     <!--       <Button
+                android:id="@+id/btn_match"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawableTop="@drawable/click_match"
+                android:text="我要拍"
+                android:background="@drawable/bg_checkbox_menus"
+                android:onClick="onTabClicked"
+                android:paddingBottom="2dp"
+                android:paddingTop="7dip"
+                android:scaleType="matrix"
+                android:textColor="@color/colorbutton"
+                android:textSize="12sp"
+                />-->
+            <Button
+                android:id="@+id/btn_match"
+                android:layout_width="35dp"
+                android:layout_height="33dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/btn_match"
+                android:onClick="onTabClicked"
+                android:scaleType="matrix"
+                />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/btn_container_message"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            >
+         <!--   <Button
+                android:id="@+id/btn_message"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawableTop="@drawable/click_message"
+                android:text="私信"
+                android:onClick="onTabClicked"
+                android:paddingTop="7dip"
+                android:background="@drawable/bg_checkbox_menus"
+                android:scaleType="matrix"
+                android:textColor="@color/colorbutton"
+                android:drawablePadding="2dp"
+                android:textSize="12sp"
+                />-->
+            <Button
+                android:id="@+id/btn_message"
+                android:layout_width="32dp"
+                android:layout_height="30dp"
+                android:onClick="onTabClicked"
+                android:scaleType="matrix"
+                android:layout_centerInParent="true"
+                android:background="@drawable/click_message"
+                />
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/btn_container_me"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            >
+       <!--     <Button
+                android:id="@+id/btn_me"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:drawableTop="@drawable/click_me"
+                android:text="我"
+                android:onClick="onTabClicked"
+                android:paddingTop="7dip"
+                android:background="@drawable/bg_checkbox_menus"
+                android:scaleType="matrix"
+                android:textColor="@color/colorbutton"
+                android:drawablePadding="2dp"
+                android:textSize="12sp"
+                />-->
+            <Button
+                android:id="@+id/btn_me"
+                android:layout_width="32dp"
+                android:layout_height="30dp"
+                android:onClick="onTabClicked"
+                android:scaleType="matrix"
+                android:layout_centerInParent="true"
+                android:background="@drawable/click_me"
+                />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/main_bottom"
+        android:layout_alignParentLeft="true">
+
+    </RelativeLayout>
+
+</RelativeLayout>
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        app:headerLayout="@layout/nav_header_main"
+        app:menu="@menu/activity_main_drawer"
+        />
+</android.support.v4.widget.DrawerLayout>
